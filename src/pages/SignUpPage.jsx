@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import apnaKaam from "../assets/apna-kaam.png";
 import { useDispatch, useSelector } from "react-redux";
-import { signUpSuccess, updateName } from "./signUpSlice";
+import { signUpSuccess, updateName } from "../features/signUpSlice";
 import AvatarSelect from "../components/AvatarSelect";
 import { useNavigate } from "react-router-dom";
 import begin from "../assets/begin.mp3";

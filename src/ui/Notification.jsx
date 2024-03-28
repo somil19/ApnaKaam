@@ -4,7 +4,7 @@ import {
   setNotification,
   setNotificationTime,
   setTodoTitle,
-} from "../features/Todo/todoFormSlice";
+} from "../features/todoFormSlice";
 import { faClock, faSquareXmark } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
 

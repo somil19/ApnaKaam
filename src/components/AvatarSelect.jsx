@@ -10,7 +10,7 @@ import man from "../assets/man.png";
 import women from "../assets/women.png";
 import user from "../assets/user.png";
 import { useDispatch, useSelector } from "react-redux";
-import { updateAva } from "../pages/signUpSlice";
+import { updateAva } from "../features/signUpSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 

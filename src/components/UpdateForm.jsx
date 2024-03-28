@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { updateTodo } from "../features/Todo/todoSlice";
+import { updateTodo } from "../features/todoSlice";
 import {
   closeUpdateForm,
   setNotification,
   setNotificationTime,
   setTodoTitle,
-} from "../features/Todo/todoFormSlice";
+} from "../features/todoFormSlice";
 import save from "../assets/save.mp3";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

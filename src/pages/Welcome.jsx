@@ -6,7 +6,7 @@ import { faGrinWink, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import pencil from "../assets/write.png";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { openForm } from "../features/Todo/todoFormSlice";
+import { openForm } from "../features/todoFormSlice";
 import pop from "../assets/pop.mp3";
 export default function Welcome() {
   const userName = useSelector((state) => state.signUp.userName);

@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import todoReducer from "./features/Todo/todoSlice";
-import signUpReducer from "./pages/signUpSlice";
-import todoFormReducer from "./features/Todo/todoFormSlice";
+import todoReducer from "./features/todoSlice";
+import signUpReducer from "./features/signUpSlice";
+import todoFormReducer from "./features/todoFormSlice";
 
 export const store = configureStore({
   reducer: {

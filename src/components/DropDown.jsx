@@ -7,8 +7,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { logOut } from "../pages/signUpSlice";
-import { clearTodos } from "../features/Todo/todoSlice";
+import { logOut } from "../features/signUpSlice";
+import { clearTodos } from "../features/todoSlice";
 
 export default function DropDown({ setShowDropdown }) {
   const navigate = useNavigate();

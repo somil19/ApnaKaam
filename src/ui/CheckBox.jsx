@@ -55,7 +55,7 @@
 
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleTodo } from "../features/Todo/todoSlice";
+import { toggleTodo } from "../features/todoSlice";
 
 function CheckBox({ id, day }) {
   const dispatch = useDispatch();

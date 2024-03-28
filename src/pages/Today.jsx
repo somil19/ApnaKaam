@@ -15,9 +15,7 @@ export default function Today() {
       {todayTodos.length > 0 && <Greeting />}
       {!isOpen && todayTodos.length === 0 && <Welcome />}
       {todayTodos.length === 0 && isOpen && <TodoForm day={"today"} />}
-      {todayTodos.length > 0 && (
-        <TodoList todayTodos={todayTodos} day={"today"} />
-      )}
+      {todayTodos.length > 0 && <TodoList Todos={todayTodos} day={"today"} />}
       {isOpen && <TodoForm day={"today"} />} {/* Corrected line */}
     </div>
   );

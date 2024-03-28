@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeTodo } from "../features/Todo/todoSlice";
+import { removeTodo } from "../features/todoSlice";
 import UpdateForm from "../components/updateForm";
 import delSound from "../assets/delete.mp3";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,13 +13,13 @@ import {
   faTrashAlt,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import { closeUpdateForm, openForm } from "../features/Todo/todoFormSlice";
+import { closeUpdateForm, openForm } from "../features/todoFormSlice";
 
 import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
 import CheckBox from "../ui/CheckBox";
 import Notification from "../ui/Notification";
 const deleteSound = new Audio(delSound);
-export default function TodoList({ todayTodos, day }) {
+export default function TodoList({ Todos, day }) {
   const isUpdateForm = useSelector((state) => state.todoForm.isUpdateForm);
   const showNotification = useSelector(
     (state) => state.todoForm.showNotification
@@ -29,9 +29,9 @@ export default function TodoList({ todayTodos, day }) {
   const [searchQuery, setSearchQuery] = useState(""); // State to store search query
   const [sortBy, setSortBy] = useState("aplhabetical"); // State to store sort by option
 
-  const todosLength = todayTodos.length;
+  const todosLength = Todos.length;
 
-  const filteredTodos = todayTodos.filter((todo) =>
+  const filteredTodos = Todos.filter((todo) =>
     todo.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
   const handleUpdateTodo = (todo) => {
@@ -199,7 +199,7 @@ export default function TodoList({ todayTodos, day }) {
       {selectedTodo && !isUpdateForm && (
         <UpdateForm todoToUpdate={selectedTodo} />
       )}
-      {showNotification && <Notification title={todayTodos.title} />}
+      {showNotification && <Notification title={Todos.title} />}
     </div>
   );
 }

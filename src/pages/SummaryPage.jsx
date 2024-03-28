@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { VictoryPie } from "victory";
 import AvatarSelect from "../components/AvatarSelect";
 import { useState } from "react";
-import { updateName } from "./signUpSlice";
+import { updateName } from "../features/signUpSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 function SummaryPage() {

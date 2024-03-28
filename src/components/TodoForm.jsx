@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../features/Todo/todoSlice";
+import { addTodo } from "../features/todoSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar as solidStar,
@@ -17,7 +17,7 @@ import {
   setNotification,
   setNotificationTime,
   setTodoTitle,
-} from "../features/Todo/todoFormSlice";
+} from "../features/todoFormSlice";
 const alarmSound = new Audio(cute);
 export default function TodoForm({ day }) {
   const [title, setTitle] = useState("");
