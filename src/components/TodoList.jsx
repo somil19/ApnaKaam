@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeTodo } from "../features/todoSlice";
-import UpdateForm from "../components/updateForm";
+import UpdateForm from "../components/UpdateForm";
 import delSound from "../assets/delete.mp3";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
