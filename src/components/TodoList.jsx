@@ -53,9 +53,9 @@ export default function TodoList({ Todos, day }) {
     } else if (sortBy === "aplhabetical") {
       return a.title.localeCompare(b.title);
     } else if (sortBy === "inputOrder") {
-      return a.id - b.id; // Compare based on original input order
+      return a.id - b.id;
     }
-    // Add more sorting criteria if needed
+
     return 0;
   };
   return (

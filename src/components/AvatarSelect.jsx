@@ -128,7 +128,7 @@ function Img(props) {
   return (
     <div onClick={() => selectOption(data)}>
       <img
-        src={imgUrl} // Use imgSrc here
+        src={imgUrl}
         alt={value}
         className="h-28 w-28"
         style={{

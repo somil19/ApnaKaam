@@ -13,16 +13,16 @@ import SummaryPage from "./pages/SummaryPage";
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <SignUpPage />,
+  },
+  {
+    path: "/welcome",
+    element: <Welcome />,
+  },
+  {
     element: <AppLayout />,
     children: [
-      {
-        path: "/",
-        element: <SignUpPage />,
-      },
-      {
-        path: "/welcome",
-        element: <Welcome />,
-      },
       {
         path: "/today",
         element: <Today />,

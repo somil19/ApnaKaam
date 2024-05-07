@@ -13,6 +13,7 @@ import user from "../assets/user.png";
 import DropDown from "../components/DropDown";
 export default function Header() {
   const [selectedOption, setSelectedOption] = useState("/today");
+  const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
   const handleSelectChange = (event) => {
     const selectedValue = event.target.value;
@@ -21,10 +22,10 @@ export default function Header() {
     // Navigate to the selected option's path
   };
 
-  const [showDropdown, setShowDropdown] = useState(false);
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
+
   const userName = useSelector((state) => state.signUp.userName);
   const userAvatar = useSelector((state) => state.signUp.avatar);
   // console.log(userAvatar);
